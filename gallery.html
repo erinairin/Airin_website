@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airin's Gallery</title>
     <style>
-        /* Style for the body */
         body {
             background-image: url('image/orchid.jpg');
             background-repeat: no-repeat;
@@ -15,7 +14,6 @@
             padding: 0;
         }
 
-        /* Navigation Bar */
         nav {
             display: flex;
             align-items: center;
@@ -46,7 +44,7 @@
         nav ul li a {
             text-decoration: none;
             color: #333;
-            font-family: Arial, sans-serif; /* Set Arial font for the navigation links */
+            font-family: Arial, sans-serif; 
             font-size: 16px;
             font-weight: bold;
             padding: 5px 10px;
@@ -63,8 +61,7 @@
             background: #333;
             color: white;
         }
-
-        /* Countdown Clock */
+	    
         .countdown {
             background: #fff;
             border: 3px solid brown;
@@ -107,8 +104,7 @@
             font-size: 14px;
             font-weight: normal;
         }
-
-        /* Gallery container */
+	    
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -119,7 +115,6 @@
             max-width: 90%;
         }
 
-        /* Style for individual gallery items */
         .gallery img {
             max-width: 100%;
             height: auto;
@@ -129,32 +124,29 @@
         }
 
         .gallery img:hover {
-            transform: scale(1.05); /* Slight zoom effect on hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+            transform: scale(1.05); 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
         }
 
-        /* Make the gallery items responsive */
         .gallery-item {
-            flex: 1 1 calc(25% - 20px); /* Four images per row with gap */
+            flex: 1 1 calc(25% - 20px); 
             max-width: calc(25% - 20px);
         }
 
-        /* Adjust for smaller screens */
         @media (max-width: 768px) {
             .gallery-item {
-                flex: 1 1 calc(50% - 20px); /* Two images per row */
+                flex: 1 1 calc(50% - 20px);
                 max-width: calc(50% - 20px);
             }
         }
 
         @media (max-width: 480px) {
             .gallery-item {
-                flex: 1 1 100%; /* One image per row */
+                flex: 1 1 100%; 
                 max-width: 100%;
             }
         }
 
-        /* Responsive Design */
         @media (max-width: 600px) {
             .countdown {
                 padding: 10px 20px;
@@ -170,7 +162,6 @@
         }
     </style>
     <script>
-        // JavaScript for Countdown Timer
         function startCountdown(endDate) {
             const timer = document.getElementById('timer');
 
@@ -201,7 +192,7 @@
         }
 
         window.onload = function() {
-            const countdownEndDate = "2025-02-23T23:59:59"; // Target date and time
+            const countdownEndDate = "2025-02-23T23:59:59"; 
             startCountdown(countdownEndDate);
         };
     </script>
@@ -219,7 +210,6 @@
             </ul>
     </nav>
 
-    <!-- Countdown Clock -->
     <div class="countdown">
         <h1>Countdown to Diploma End</h1>
         <div id="timer" class="time"></div>
@@ -234,9 +224,9 @@
 </center>
     </div>
 
-    <!-- Gallery -->
+
     <div class="gallery">
-        <!-- Gallery Items -->
+
         <div class="gallery-item">
             <img src="image/cutegiler.jpg" alt="Art Piece 1">
         </div>
